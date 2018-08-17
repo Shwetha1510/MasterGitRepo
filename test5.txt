@@ -1,0 +1,23 @@
+Previously (long time ago) I made a public repository on Github, with some files. Now I set up a local Git repository on my current computer, and committed some files. Then I added a remote pointing to my Github page:
+
+[root@osboxes c]# git remote add learnc https://github.com/michaelklachko/Learning-C
+That seemed to be successful:
+
+[root@osboxes c]# git remote show learnc
+* remote learnc
+  Fetch URL: https://github.com/michaelklachko/Learning-C
+  Push  URL: https://github.com/michaelklachko/Learning-C
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local ref configured for 'git push':
+    master pushes to master (local out of date)
+Now I want to download the files from my Github repo to my computer. I did this:
+
+[root@osboxes c]# git fetch learnc
+[root@osboxes c]# git merge learnc/master
+warning: refname 'learnc/master' is ambiguous.
+Already up-to-date.
+However, I don't see any new files in my local directory. How can I get them?
+
+I also tried to do this:
