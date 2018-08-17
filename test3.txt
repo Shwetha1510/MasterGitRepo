@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 As you can see above, the git commit command has committed the changes in the four files in the local repository.
 
 Now, if you want to commit a snapshot of all the changes in the working directory at once, you can use the command below:
@@ -10,4 +11,18 @@ I am adding edureka5.txt using the command:
 
 git add edureka5.txt
 
+=======
+As you can see above, the git commit command has committed the changes in the four files in the local repository.
+
+Now, if you want to commit a snapshot of all the changes in the working directory at once, you can use the command below:
+
+git commit -a
+
+I have created two more text files in my working directory viz. edureka5.txt and edureka6.txt but they are not added to the index yet. 
+
+I am adding edureka5.txt using the command:
+
+git add edureka5.txt
+
+>>>>>>> 0117caa31b9bf6c51235c55a41ea3340c2256b25
 I have added edureka5.txt to the index explicitly but not edureka6.txt and made changes in the previous files. I want to commit all changes in the directory at once. Refer to the below snapshot.
