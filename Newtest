@@ -1,0 +1,19 @@
+Web Pages Not Serving from IIS
+We strongly recommend that all users upgrade to Microsoft Internet Information Services (IIS) version 7.0 running on Microsoft Windows Server 2008. IIS 7.0 significantly increases Web infrastructure security. For more information about IIS security-related topics, visit the following Microsoft Web site:
+http://www.microsoft.com/technet/security/prodtech/IIS.mspx
+For more information about IIS 7.0, visit the following Microsoft Web site:
+http://www.iis.net/default.aspx?tabid=1
+Symptoms
+When trying to browse a Web page that is hosted by Internet Information Server/Services, clients may report they are unable to connect.
+Cause
+Unfortunately, there is no single cause for IIS failing to serve Web pages. Even if network connectivity can be eliminated as the cause, additional information is required to determine the exact reason why clients cannot connect to the server.
+More Information
+Because IIS is a complex product that relies on various operating system components, it is important to determine if only certain types of content have stopped being served. Following are two samples that you can use to test the two most common types of content: 
+Static HTML (.htm or .html files)
+Active Server Pages (ASP) pages (.asp files)
+
+To test IIS's ability to serve HTML (static) content.
+
+Create a file called Hello.htm in the content folder for IIS (by default, this is C:\Inetpub\Wwwroot) that contains the sample code listed below.
+Then request
+http://localhost/hello.htm from the Web browser that is installed on the IIS server.
